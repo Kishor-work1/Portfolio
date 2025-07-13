@@ -3,7 +3,7 @@ import nodemailer from 'nodemailer';
 import dotenv from 'dotenv';
 
 // Manually load environment variables
-dotenv.config({ path: '.env.local' });
+dotenv.config();
 
 export async function POST(req: NextRequest) {
   try {
