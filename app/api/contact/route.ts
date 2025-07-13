@@ -1,9 +1,5 @@
 import { NextRequest, NextResponse } from 'next/server';
 import nodemailer from 'nodemailer';
-import dotenv from 'dotenv';
-
-// Manually load environment variables
-dotenv.config();
 
 export async function POST(req: NextRequest) {
   try {
@@ -18,8 +14,8 @@ export async function POST(req: NextRequest) {
     }
 
     // Temporary hardcoded values for testing
-    const EMAIL_USER = process.env.EMAIL_USER || 'dathkishor@gmail.com';
-    const EMAIL_PASS = process.env.EMAIL_PASS || 'azou lyvq hqjn hdhi';
+    const EMAIL_USER = process.env.EMAIL_USER ;
+    const EMAIL_PASS = process.env.EMAIL_PASS ;
     
     console.log('EMAIL_USER:', EMAIL_USER);
     console.log('EMAIL_PASS exists:', !!EMAIL_PASS);
